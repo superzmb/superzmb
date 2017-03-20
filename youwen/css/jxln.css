@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  overflow-x: hidden;
+}
+.f1 {
+  float: left;
+}
+.r1 {
+  float: right;
+}
+.head {
+  width: 1366px;
+  height: 90px;
+}
+.logo {
+  width: 216px;
+  height: 31px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.nav {
+  width: 900px;
+  height: 90px;
+}
+.nav ul {
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  width: 80px;
+  height: 90px;
+  text-align: center;
+}
+.nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  line-height: 90px;
+  color: black;
+}
+.nav li a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.banner {
+  width: 1360px;
+  height: 570px;
+  margin: 0 auto;
+  background: url(../images/flowchart/flowchartbg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner .right1 {
+  position: fixed;
+  top: 220px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/wechatcode.png);
+  z-index: 999;
+  cursor: pointer;
+}
+.banner .right2 {
+  position: fixed;
+  top: 290px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/lineserver.png);
+  z-index: 99;
+  cursor: pointer;
+}
+.banner .right3 {
+  position: fixed;
+  top: 360px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/backtop.png);
+  z-index: 999;
+  cursor: pointer;
+}
+.banner1 {
+  width: 800px;
+  height: 270px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.banner1 span {
+  display: block;
+  font-size: 36px;
+  color: red;
+  margin-top: 50px;
+  text-align: center;
+}
+.banner1-p {
+  font-family: "黑体";
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
+.yuyue {
+  width: 190px;
+  height: 60px;
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  margin: 70px auto 0 auto;
+}
+.two {
+  width: 1200px;
+  height: 620px;
+  margin: 0 auto;
+}
+.two img {
+  display: block;
+  margin: 0 auto;
+}
+.two p {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 36px;
+}
+.three {
+  width: 100%;
+  height: 585px;
+  margin: 0 auto;
+  background: #e8f4ff;
+}
+.three p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #4ba8ff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.three img {
+  display: block;
+  margin: 0 auto;
+}
+.four {
+  width: 100%;
+  height: 585px;
+  margin: 0 auto;
+}
+.four p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #4ba8ff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.four img {
+  display: block;
+  margin: 0 auto;
+}
+.five {
+  width: 100%;
+  height: 585px;
+  margin: 0 auto;
+  background: #fffcf7;
+}
+.five p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #4ba8ff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.five img {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  position: static;
+  width: 100%;
+  min-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  background: #333;
+}
+.container p {
+  width: 100%;
+  min-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #fff;
+}
+.container a {
+  height: 20px;
+  display: block;
+  line-height: 20px;
+  text-align: center;
+  background: url(../images/beian.png) no-repeat;
+  background-position-x: 90px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+/*模态框*/
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.mtk-all {
+  position: fixed;
+  display: none;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 804px;
+  height: 400px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 15%;
+  z-index: 999;
+}
+.mtk-lef {
+  width: 399px;
+  height: 100%;
+  color: #444;
+  font-size: 22px;
+}
+.mtk-lef span:first-child {
+  margin-left: 60px;
+}
+.mtk-lef span {
+  display: inline-block;
+  width: 70px;
+  margin-left: 15px;
+  padding-top: 90px;
+  float: left;
+}
+.mtk-lef p {
+  display: inline-block;
+  width: 100%;
+  margin-left: 60px;
+  padding-top: 6px;
+  padding-bottom: 17px;
+}
+.mtk-mid {
+  width: 1px;
+  height: 220px;
+  background: #bcbcbc;
+  margin-top: 12%;
+}
+.mtk-rig {
+  width: 400px;
+  height: 100%;
+}
+.close {
+  color: #bcbcbc;
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: url(../images/closeico.png);
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  text-indent: 90%;
+  cursor: pointer;
+}
+.form1 p:first-child {
+  margin-top: 100px;
+}
+.form1 p {
+  width: 370px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.form1 select {
+  width: 100px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #333;
+}
+.right1 {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 220px;
+  right: 120px;
+  cursor: pointer;
+  z-index: 999;
+  background-image: url(../images/wechatcode.png);
+}
+.chat {
+  position: fixed;
+  top: 220px;
+  right: 190px;
+  width: 116px;
+  height: 110px;
+  background-image: url(../images/codepic.png);
+  z-index: 999;
+  display: none;
+}
+.right2 {
+  position: fixed;
+  top: 290px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/lineserver.png);
+  z-index: 999;
+  cursor: pointer;
+}
+.right3 {
+  position: fixed;
+  top: 360px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/backtop.png);
+  z-index: 999;
+  cursor: pointer;
+}
+.right3:hover {
+  position: fixed;
+  top: 360px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/gotop.png);
+  z-index: 999;
+  cursor: pointer;
+}

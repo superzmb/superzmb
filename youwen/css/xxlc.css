@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  overflow-x: hidden;
+}
+body ul {
+  list-style: none;
+}
+.fullpage {
+  width: 1360px;
+  margin: 0 auto;
+}
+.f1 {
+  float: left;
+}
+.r1 {
+  float: right;
+}
+.head {
+  width: 1366px;
+  height: 90px;
+  margin: 0 auto;
+}
+.logo {
+  width: 216px;
+  height: 31px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.nav {
+  width: 900px;
+  height: 90px;
+  margin: 0 auto;
+}
+.nav .last1 {
+  width: 145px;
+  height: 90px;
+}
+.nav ul {
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  width: 80px;
+  height: 90px;
+  text-align: center;
+}
+.nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  line-height: 90px;
+  color: black;
+}
+.nav li a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.flex {
+  width: 1366px;
+  height: 600px;
+  margin: 0 auto;
+}
+.flex a {
+  display: block;
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+.two {
+  width: 1366px;
+  height: 870px;
+  margin: 0 auto;
+  background: url(../images/flowchart/flowchartbg.png) no-repeat;
+}
+.two p:first-child {
+  font-size: 30px;
+  color: #333;
+  padding-top: 50px;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.two p:first-child span {
+  font-size: 34px;
+  color: #ff000e;
+}
+.two p:nth-child(2) {
+  font-size: 24px;
+  color: #666;
+  padding-top: 20px;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.two img {
+  width: 1140px;
+  height: 480px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.two .btn-1 {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  border-radius: 10px;
+  width: 190px;
+  height: 60px;
+  background: #ff000e;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+.three {
+  width: 100%;
+  height: 740px;
+  margin: 0 auto;
+}
+.three p:first-child {
+  padding-top: 60px;
+  display: block;
+  font-size: 34px;
+  color: #000;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.three p:first-child span {
+  font-size: 40px;
+  color: #ff000e;
+}
+.three p:nth-child(2) {
+  padding-top: 20px;
+  font-size: 22px;
+  color: #999;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.three .row-3 {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.three .row-3 img {
+  width: 175px;
+  margin: 50px 30px;
+}
+.three .btn2 {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  display: block;
+  border-radius: 10px;
+  width: 190px;
+  height: 60px;
+  background: #ff000e;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+.biaodan {
+  width: 100%;
+  min-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  background: #4c4c4c;
+  z-index: 998;
+}
+.container {
+  position: static;
+  width: 100%;
+  min-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  background: #333;
+}
+.container p {
+  width: 100%;
+  min-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #fff;
+}
+.container a {
+  height: 20px;
+  display: block;
+  line-height: 20px;
+  text-align: center;
+  background: url(../images/beian.png) no-repeat;
+  background-position-x: 90px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}

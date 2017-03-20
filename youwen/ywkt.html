@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ywkt.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div class="head">
+			<a href="" name="mao"></a>
+			<div class="logo f1 wow rotateInDownLeft"><img src="images/logo.png" alt="" /></div>
+			<div class="nav r1">
+				<ul>
+					<li class="wow rotateInDownLeft"><a href="sy.html">首页</a></li>
+					<li class="wow bounceInDown"><a href="jxln.html">教学理念</a></li>
+					<li class="wow bounceInRight"><a href="">课程体系</a></li>
+					<li class="wow fadeInDown"><a href="szll.html">师资力量</a></li>
+					<li class="wow fadeInLeftBig"><a href="xxlc.html">学习流程</a></li>
+					<li class="wow fadeOutUpBig"><a href="ywkt.html">优问课堂</a></li>
+					<li class="wow lightSpeedIn"><a href="ywkt.html">在线一对一</a></li>
+					<li class="last1">电话:400-777-5029</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+		<div class="bg1"></div>
+	</div>
+	
+	<div class="article">
+		<div class="article-part">
+			<div class="part-left">
+				<ul class="left-menu">
+					<li><a href="">热门推荐</a></li>
+					<li><a href="">优问资讯</a></li>
+					<li><a href="">学生课堂</a></li>
+					<li><a href="">家长课堂</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<p>Copyright © 上海优问文化传播有限公司（沪ICP备16050428号）</p>
+			<a href="">沪公网安备 31011002000908号</a>
+		</div>	
+		<div class="right1"></div>
+		<div class="chat"></div>
+		<div class="right2"></div>
+		<div class="right3"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".right1").mousemove(function(){
+				$(".chat").show();
+			}).mouseout(function(){
+				$(".chat").hide();
+			})
+		})
+		
+		
+		var right1=document.getElementsByClassName("right1")[0];
+		var chat=document.getElementsByClassName("chat")[0];
+		var right2=document.getElementsByClassName("right2")[0];
+		var right3=document.getElementsByClassName("right3")[0];
+		right3.onclick=function(){
+			document.body.scrollTop=0;
+//			right3.Style("backgroundImage","url(../images/gotop.png)")
+		}
+	</script>
+</html>

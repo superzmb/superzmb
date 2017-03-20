@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/jxln.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="right1"></div>
+		<div class="right2"></div>
+		<a href="#mao"><div class="right3"></div></a>
+		<div id="fullpage">
+			<!--第一页-->
+			<div class="section">
+				<div class="head">
+					<a href="" name="mao"></a>
+					<div class="logo f1"><img src="images/logo.png" alt="" /></div>
+					<div class="nav r1">
+						<ul>
+							<li><a href="sy.html">首页</a></li>
+							<li><a href="jxln.html">教学理念</a></li>
+							<li><a href="">课程体系</a></li>
+							<li><a href="szll.html">师资力量</a></li>
+							<li><a href="xxlc.html">学习流程</a></li>
+							<li><a href="ywkt.html">优问课堂</a></li>
+							<li><a href="ywkt.html">在线一对一</a></li>
+							<li class="last1">电话:400-777-5029</li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="banner1">
+						<p class="banner1-p">激发学习动力&nbsp;&nbsp;提高学习能力&nbsp;&nbsp;强化学习毅力</p>
+						<span>一对一定制专属你的学习方案</span>
+						<div class="yuyue bttn">免费预约</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--第二页-->
+			<div class="section two">
+				<img src="images/teachidea/cont1bg.png" alt="" />
+				<p>影响学习力三要素</p>
+			</div>
+			<!--第三页-->
+			<div class="section three">
+				<p>激发学习动力</p>
+				<img src="images/teachidea/cont2bg.png" alt="" />
+			</div>
+			<!--第四页-->
+			<div class="section four">
+				<p>提高学习能力</p>
+				<img src="images/teachidea/cont3bg.png" alt="" />
+			</div>
+			<!--第五页-->
+			<div class="section five">
+				<p>强化学习毅力</p>
+				<img src="images/teachidea/cont4bg.png" alt="" />
+			</div>
+		</div>
+		<div class="container">
+			<p>Copyright © 上海优问文化传播有限公司（沪ICP备16050428号）</p>
+			<a href="">沪公网安备 31011002000908号</a>
+		</div>	
+		
+		<!--模态框-->
+		<div class="mask"></div>
+		<div class="mtk-all">
+			<div class="mtk-lef f1">
+				<span>超小组</span>
+				<span>分层次</span>
+				<span>强互动</span>
+				<p>全流程强化中小学生学习动力</p>
+				<div class="mtk-img">
+					<img src="images/mtk_boy.png"/>
+				</div>
+			</div>
+			<div class="mtk-mid f1"></div>
+			<div class="mtk-rig f1">
+				<div class="close"></div>
+				<form action="" class="form1">
+					<p><input type="text" name="" id="" value="姓名" /></p>
+					<p><input type="text" name="" id="" value="手机号" /></p>
+					<select name="" style="margin-left: 30px;">
+						<option value="0">小学</option>
+						<option value="1">小升初</option>
+						<option value="2">初中</option>
+						<option value="3">中考冲刺</option>
+						<option value="4">高中</option>
+						<option value="5">高考冲刺</option>
+					</select>
+					<select name="">
+						<option value="0">一年级</option>
+						<option value="1">二年级</option>
+						<option value="2">三年级</option>
+						<option value="3">四年级</option>
+						<option value="4">五年级</option>
+					</select>
+					<select name="">
+						<option value="0">语文</option>
+						<option value="1">数学</option>
+						<option value="2">英语</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div class="right1"></div>
+		<div class="chat"></div>
+		<div class="right2"></div>
+		<div class="right3"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			 $('#fullpage').fullpage();
+			 
+			 //			模态框
+//			显示
+			$(".bttn").click(function(){
+				$(".mask").show();
+				$(".mtk-all").show();
+			})
+//			隐藏
+			$(".close").click(function(){
+				$(".mask").hide();
+				$(".mtk-all").hide();
+			})
+			
+			
+//			返回顶部
+			$(".right1").mousemove(function(){
+				$(".chat").show();
+			}).mouseout(function(){
+				$(".chat").hide();
+			})
+		})
+		
+		var right1=document.getElementsByClassName("right1")[0];
+		var chat=document.getElementsByClassName("chat")[0];
+		var right2=document.getElementsByClassName("right2")[0];
+		var right3=document.getElementsByClassName("right3")[0];
+		right3.onclick=function(){
+			document.body.scrollTop=0;
+//			right3.Style("backgroundImage","url(../images/gotop.png)")
+		}
+	</script>
+</html>
